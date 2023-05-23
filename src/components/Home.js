@@ -1,5 +1,5 @@
-import React, { useState, Text } from 'react';
-import backgroundImage from './ASM.PNG';
+import React, { useState} from 'react';
+import backgroundImage from '../ASM.PNG'
 
 
 
@@ -38,7 +38,6 @@ const labels = {
 
 const labelDiv = {
     display: 'flex',
-    alignItems: 'center',
     padding: 10,
     paddingBottom: 20,
     paddingTop: 10,

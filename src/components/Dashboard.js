@@ -1,16 +1,6 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-const button = {
-    fontSize: 20,
-    fontFamily: 'Georgia',
-    borderRadius: 3,
-    padding: 5,
-    paddingRight: 8,
-    paddingLeft: 8,
-    marginBottom: 5,
-    width: '200px',
-}
+import NavBar from './NavBar'
 
 const labels = {
     fontSize: '24px',
@@ -47,24 +37,24 @@ const submit = {
 
 // Dashboard component
 const Dashboard = () => {
-  const [date, setDate] = useState('');
-  const [testName, setTestName] = useState('');
-  const [selectedClass, setSelectedClass] = useState('');
+//   const [date, setDate] = useState('');
+//   const [testName, setTestName] = useState('');
+//   const [selectedClass, setSelectedClass] = useState('');
   const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
 
-  const handleClassChange = (e) => {
-    setSelectedClass(e.target.value);
-  };
+//   const handleClassChange = (e) => {
+//     setSelectedClass(e.target.value);
+//   };
 
   const handleSubmit = () => {
     // Handle form submission logic
-    console.log('Date:', date);
-    console.log('Test Name:', testName);
-    console.log('Selected Class:', selectedClass);
+    // console.log('Date:', date);
+    // console.log('Test Name:', testName);
+    // console.log('Selected Class:', selectedClass);
   };
 
   return (
@@ -73,24 +63,9 @@ const Dashboard = () => {
         alignItems: 'center',
     }}
     className="dashboard">
-        <div style={{
-        alignItems: 'left',
-        backgroundColor: 'grey',
-        height: '100vh',
-        padding: 15,
-        textAlign: 'center',
-        alignItems: 'center',
-        display: 'flex',
-        flexDirection: 'column',
-      }}>
+      
 
-            <a href='/Dashboard'><button style={button}>Submit a Test</button></a>
-            <button style={button}>Your Classes</button>
-            <button style={button}>Edit Classes</button>
-            <button style={button}>Your Tests</button>
-            <button style={button}>Edit Tests</button>
-            <button style={button}>Calendar</button>
-        </div>
+        <NavBar />
 
             
         <div style={{ 
