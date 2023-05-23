@@ -56,14 +56,6 @@ const Dashboard = () => {
     setSelectedOption(event.target.value);
   };
 
-  const handleDateChange = (e) => {
-    setDate(e.target.value);
-  };
-
-  const handleTestNameChange = (e) => {
-    setTestName(e.target.value);
-  };
-
   const handleClassChange = (e) => {
     setSelectedClass(e.target.value);
   };
@@ -92,7 +84,7 @@ const Dashboard = () => {
         flexDirection: 'column',
       }}>
 
-            <button style={button}>Submit a Test</button>
+            <a href='/Dashboard'><button style={button}>Submit a Test</button></a>
             <button style={button}>Your Classes</button>
             <button style={button}>Edit Classes</button>
             <button style={button}>Your Tests</button>
